@@ -1,0 +1,151 @@
+---
+output:
+  html_document: default
+  pdf_document: default
+---
+# The Supply and Demand Model
+
+
+
+This unit focuses on the Supply and Demand model, a theoretical tool that shows how prices are shaped by the market interaction of sellers and buyers.  Its malleability and simplicity makes this the most widely used model in economics. You can use the model to analyze a wide variety of markets: markets for consumer goods and services, financial markets,  healthcare and insurance markets, labor markets among others.
+
+By the end of this unit you will be able to: 
+1. Formulate conjectures on the source of price variations and identify data you could use to test these conjectures.
+1. Use mathematical formalizations (equations and graphs) to represent the Supply and Demand model and to analyze and evaluate how economic shocks affect prices. 
+1. Use the Supply and Demand model to analyze the outcomes of various public policies.
+1. Clearly explain your economic reasoning demonstrating fluency in Supply and Demand terminology. 
+
+## The model
+Goals are: 
+1. Explain and forecast price differences and changes
+1. Predict the outcome and welfare effect of public policies
+1. Evaluate whether public intervention could enhance market outcomes.
+
+
+### Supply Definition
+
+The **direct relationship** between a product's **price and the quantity people (or organizations) wish to sell**.
+
+$$Q_s = S(P,.,.) \quad S_p > 0$$
+where $P.,.,$ represents other variables such as opportunity cost, technology, information etc. These all shift the relationship. 
+
+### Supply Definition
+
+The **direct relationship** between a product's **price and the quantity people (or organizations) wish to buy**.
+
+$$
+Q_D = D(P,.,.,.,) \quad \text{and} \quad S_p >0
+$$
+
+where $P,.,.$ represents other variables such as budget, substitutes availability, information, etc. that shift the relationship.
+
+#### Purchasing Power ####
+
+Normal goods:
+
+Inferior Goods:
+
+#### Related Goods ####
+
+- **Gross Substitute:** something here
+- **Gross Compliments:** When the price of the compliment increases, then demand will decline (think gasoline and tires). 
+- **Expected future prices:**  If we think the price of an item will go up, we will want to buy more of this item today. 
+- **Taxes:** Suppose government introduces a unit tax (of $t$ dollars) on top of the price, known as a buyers tax. What will happen to the demand of the product? Demand will shift inward. Note that consumers can react differently to value-added-taxes compared to other taxes.
+
+#### Equilibrium ####
+The market is in equilibrium when there is no upward or downward pressure on prices.
+That is when the quantity supplied equals the quantity demanded, and the market clears.
+
+
+## Comparative Statics ##
+
+### The Formulas ###
+
+Suppose demand is $$Q_D = D(P, A, ...)$$
+where $P$ is a unit price and $A$ a demand side Market condition (for example: income price of a substitute, a buyers tax...)
+
+and supply is: $$Q_S = S(P,B,...)  where $P$ is a unit price and $B$ a demand side Market condition (for example: cost of labor, technology, a seller tax,...)
+
+#### Demand Side ####
+
+
+
+INSERT A BUNCH OF STUFF
+
+##### Example #####
+In the market for coffee:
+$$Q_D = 300 - 20P + 10P_{tea} \quad \text{and} \quad Q_S = 20P-100 - 2(Wage)$$
+
+Price of tea is a demand side market condition so we need to use the demand side formula. The change in price is 2 dollars (found in the demand function at $+10P_{tea}$). How senstive it is  to coffee is in supply ($+20$). How sensitive it is to demand is in front of demand ($-20$).
+
+So we end with: $$\frac{+10}{+20 - (-20)}\cdot 2 = \frac{1}{4} \cdot 2 = 50 cents$$
+
+
+If it is a tax, a sellers tax, salience will 100 and we use the supply side formula. If it is a buyers tax, it is not always fully salient so we might have to take into account saliency. 
+
+#### Deriving the formula ####
+1. We start at equilibrium condition:
+$$Q_D(P*) = Q_S(P*)$$
+Equilibrium price itself and quantity is responsive to market conditions.
+2. We highlight that equilibrium price depends on market condition A: $$Q*_D(P*(A),A_1,...) = Q*_S(P*(A),)$$
+3. We differentiate both sides of the equilibrium condition respect to market condition A: $$ \frac{d}{dA} Q*_D(P*(A),A_1,...) = \frac{d}{dA} Q*_S(P*(A),)$$
+$$D_P \frac{dP*}{dA} + D_A =  S_P \frac{dP*}{dA}$$
+$$D_A =  S_P \frac{dP*}{dA} - D_P \frac{dP*}{dA}$$
+$$D_A = (S_P - D_P)\frac{dP*}{dA}$$
+$$dA \frac{D_A}{S_P - D_P} = dP*$$
+
+#### Derive the formula for supply-side shock ####
+$$Q_D(P*) = Q_S(P*)$$
+Now we highlight equilibrium: 
+$$Q*_D(P*(B)) = Q*_S(P*(B))$$
+$$D_P \frac{dP*}{dB} = S_P \frac{dP*}{dB} + S_B$$
+
+
+We need to get:
+$$dD* = \frac{-S_B}{S_P - D_P}dB$$
+
+So we see why they are cool, you can calculate interesting info without knowing exactly what the market is doing right now (as long as we have previous estimates). 
+
+The formulas work about the same in elasticity terms as well. We are in percent changes rather than absolute changes. 
+
+$$dP* = \frac{D_A}{S_P - D_P} \cdot dA$$
+$$dP* = \frac{D_A \cdot A}{S_P - D_P} \cdot \frac{dA}{A}$$
+Then divide by equilibrium quantity
+$$dP* = \frac{D_A \cdot A/Q*}{S_P/Q* - D_P/Q*} \cdot \frac{dA}{A}$$
+Divide both sides of the equation by equilibrium price:
+
+$$\frac{dP*}{P*} = \frac{D_A \cdot A/Q*}{S_P/Q* - D_P/Q* \cdot P*} \cdot \frac{dA}{A}$$
+
+Now what are each term: 
+- Numerator on right is a demand elasticity to changes in A.
+- Left half the denominator is price elasticity of supply
+- Right half of the denominator is the price elasticity of demand
+- left half is percentage change in price
+
+$$ \perc \delta P = \frac{\Epsilon_A^D}{M_P^S - something else}$$
+
+##### Explain #####
+True or false? Markets where demand and supply are relatively price inelastic display higher price volatility.
+
+It is true of course. First you can look at graphs with a supply shift. With a flat demand curve (elastic), then there is no change in price; but, when you use an inelastic demand curve, then there is a huge change in price. 
+
+Similarly: we can look at the formula we just did;
+
+INSERT THING!
+
+
+
+###Overview:
+
+Demand is a negative function of price and many other things.
+
+Supply is a positive function of price and many other things. 
+
+We want to find equilibrium prices and quantities. We believe the the price is driven by the market wanting to balance quantity demanded and supplied. 
+
+We also know the formulas from the last half and use calculus and elasticity. We can see what happens to the prices when market conditions change. If we want magnitude we use calculus. If we want just absolute change we can graph it. 
+
+We learned about taxation. Taxation incidence, how much the different buyers and sellers share the price of the tax. We learned that whether you collect a buyers or sellers tax actually matters for salience.
+
+
+

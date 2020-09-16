@@ -1,0 +1,59 @@
+# Consumer Choice
+
+This module focuses on the Consumer Choice model. The model captures how rational consumers allocate their budgets of money or time among different valuable uses. The model is quite flexible and economists use it to analyze how shoppers decide what to buy, how families decide how much to save, or how workers decide whether to look for a job or how many hours they wish to spend working.  The ultimate goal of the model is to help us understand how changes in economic conditions, including public policy, influence these very important decisions. 
+
+1. Use algebra and graphs to represent consumers' economic predicament and the trade-offs they face 
+2. Capture and illustrate the key features of consumers' tastes with utility functions and indifference curves 
+3. Apply the Lagrangian method to determine consumers' optimal choices
+4. Explain when a consumer is in equilibrium and why at times consumers don't purchase items even if these are affordable
+
+How do you work like an economist?
+
+1. You start by noticing some anecdotal facts
+2. You collect data (or review existing ones) to verify there are some more general regularities
+3. You form a theoretical conjecture that could explain the empirical evidence
+4. You build a formal model that illustrates your conjecture
+5. You use statistical methods to:
+a) Evaluate the magnitude of the parameters driving your model
+b) Test if your model matches the empirical evidence
+c) Test the direction of causality between variables
+d) Forecast future developments and/or effects of policy intervention.
+
+
+Think like an economicst on economic models:
+1. You contrust a simplified description of conditions under which people take actions
+2. Then you describe in simple terms what drives the action that people take
+3. You determine how each of their actions affects each other
+4. Determine the outcomes of these actions. This is often an equilibrium
+5. You try to get more insight by studying what happens to key variables when certain conditions change. 
+
+## The rational consumer choice model
+
+In a nutshell: Rational consumers choose to buy the **affordable** combination (or bundle) of goods and services that **they like best**.
+
+###Budget Set and Budget Constraint###
+**Budget Set** The budget set is the set of combinations of goods and services that a consumer could afford. 
+
+**Budget Constraint** The combos that fully exhaust the consumer's budget. 
+
+Example: A student has \$70 that they can spend on chicken wings and ramen soup. Chicken wings are \$7 a serving and ramen soup is \$5 per bowl. 
+
+The budget constraint is: $$ \$70 = \$7 q_w + \$5 q_s$$
+
+If they spend all their income on wings, they get 10. Or they can get 14 bowls of soup.
+
+The slope of the budget line is $ - \frac{5}{7}$
+
+
+```{r}
+
+curve(  10-(5/7)*x , from=0, to=20, n=300, xlab="xvalue", ylab="yvalue", 
+             col="blue", lwd=3, main="Plot of (3x^2 + x)"  )
+
+
+```
+
+When the budget increases, say to 105, then we simply get a parallel shift outward. 
+
+But if instead there is a change in the price of soup, then the line gets tilted.
+
