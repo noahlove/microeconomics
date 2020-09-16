@@ -1,0 +1,53 @@
+---
+title: "Pre-class activity week 2 micro"
+author: "Noah Love: NL2658"
+date: "9/16/2020"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Sue's budget
+
+Read the following narrative and in a graph measuring carrots along the horizontal axis and soda along the vertical axis draw Sue's budget set. What is the expression of Sue's budget constraint?                
+Sue has $10 to buy soda and carrots. Soda costs $1 per bottle. Carrots cost $1 per pack for the first four packs and $2 per pack afterwards.
+
+##### Solution
+
+We can start by making a table of values if we want:
+
+| Soda | Carrots |
+|------|---------|
+| 10   | 0       |
+| 9    | 1       |
+| 8    | 2       |
+| 7    | 3       |
+| 6    | 4       |
+| 4    | 5       |
+| 2    | 6       |
+| 0    | 7       |
+
+From this, we can concluse that we need to describe the function piecewise, with the first line being from $x = 0$ to $x = 4$. When $x = 4$, the carrots cost more so the slop is greater. 
+
+Therefore, from $x = 0$ to $x = 4$, the formula is $$10 - x$$ meaning that with 0 carrots ($x = 0$), Sue buys 10 sodas. She can trade off one soda for one carrot up until $x = 5$. At $x = 5$, carrots are now costing two sodas, or \$2 dollars each, meaning the rate (or slope) doubles for $-x$ to $-2x$. Together:
+
+$$B_S = \begin{cases}
+10 - x & \text{for } 0 \leq x \leq 4 \\
+14 - 2x & \text{for } 4 \leq x \leq 7
+\end{cases}$$
+
+As a graph:
+
+```{r}
+
+func <- function(x){(0 <= x & x < 4)*(10-x)+(4 <= x & x < 7)*(14-2*x)}
+vectFunc <- Vectorize(func)
+plot(vectFunc,0,8, type = "l", col = "blue", ylab = "Soda", xlab = "Carrots", main = "Sue's Budget")
+abline(v = 0, h = 0)
+
+```
+
+
+
